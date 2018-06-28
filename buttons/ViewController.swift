@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let flatButton = FlatButton(title: "Hello World", backgroundColor: UIColor.purple)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.addSubview(flatButton)
+        flatButton.frame = view.frame
     }
 
     override func didReceiveMemoryWarning() {
